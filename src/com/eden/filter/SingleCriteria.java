@@ -12,8 +12,7 @@ import java.util.stream.Collectors;
 public class SingleCriteria implements Criteria {
     @Override
     public List<Person> meetCriteria(List<Person> sourcePersons) {
-        return sourcePersons
-                .stream()
+        return sourcePersons.stream()
                 .filter(person -> Objects.equals("single",person.getName()))
                 .collect(Collectors.toList());
     }
