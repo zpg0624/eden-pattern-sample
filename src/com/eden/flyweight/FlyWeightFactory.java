@@ -18,7 +18,7 @@ public class FlyWeightFactory {
         if(circle == null) {
             circle = new CircleShape(color);
             cache.put(color, circle);
-            System.out.println("Creating circle of color : " + color);
+            System.out.println("Creating  circle of color : " + color);
         }
         return circle;
     }
